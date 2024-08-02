@@ -1,0 +1,5 @@
+__pycache__/
+.vscode
+poetry.lock
+.env
+.DS_Store
