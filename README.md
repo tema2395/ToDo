@@ -14,8 +14,7 @@
 Сначала клонируйте репозиторий и перейдите в директорию проекта:
 
 ```sh
-git clone https://github.com/tema2395/note_manager
-cd note_manager
+git clone https://github.com/tema2395/ToDo
 ```
 
 
@@ -40,4 +39,7 @@ poetry run uvicorn app.main:app --reload
 - `GET /users/me` - Просмотр своего id
 - `POST /tasks/` -  Создание задачи
 - `GET /tasks/` - Просмотр задач
-- `POST /tasks/{task_id}/permissions/` - Разрешение на просмотр задач другому пользователю
+- `PUT /tasks/{task_id}` - Обновление существующей задачи
+- `DELETE /tasks/{task_id}` - Удаление задачи
+- `POST /tasks/{task_id}/permissions/` - Разрешение на просмотр и обновление задач другому пользователю
+- `DELETE /tasks/{task_id}/permissions/` - Удаление разрешения на просмотр и обновление задач другому пользователю
