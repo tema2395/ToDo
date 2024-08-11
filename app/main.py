@@ -4,7 +4,7 @@ from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from .database import models, crud, db
-from .database.db import engine, SessionLocal
+from .database.db import engine
 from . import schemas, auth
 
 
